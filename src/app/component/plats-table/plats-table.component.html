@@ -1,0 +1,20 @@
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Action</th>
+    </tr>
+    <tr *ngFor="let plat of plats">
+        <td>{{plat._id}}</td>
+        <td>{{plat.name}}</td>
+        <td>{{plat.price}}</td>
+        <td>{{plat.description}}</td>
+        <td>
+            <button class="btn btn-info" (click)="displayPlat(plat._id)">Display</button>
+            <button class="btn btn-warning" (click)="goToEdit(plat._id)">Edit</button>
+            <button type="submit" class="btn btn-danger" (click)="deletePlat(plat._id)">Delete</button>
+        </td>
+    </tr>
+ </table>

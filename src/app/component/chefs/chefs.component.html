@@ -1,0 +1,15 @@
+<div style="margin-top: 10%; margin-left: 30%;" class="row container">
+    <div class="col-xl-5">
+        <div class="section_tittle">
+            
+            <h2>Our Experience Chefs</h2>
+        </div>
+    </div>
+</div>
+<div class="row">
+        <div class="col-4" *ngFor="let c of chefsTab">
+            <app-chef [chefInput]="c"></app-chef>
+        </div>
+    
+    
+</div>

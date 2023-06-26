@@ -1,0 +1,45 @@
+<section class="regervation_part section_padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-5">
+                <div class="section_tittle">
+                    
+                    <h2>Add Chef</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="regervation_part_iner">
+                    <form [formGroup]="addChefForm">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="form-control" id="inputEmail4"   formControlName="name" placeholder=" Name *">
+                            </div>
+                            
+                          
+                           
+                            <div class="form-group col-md-6">
+                                <div class="input-group date">
+                                    <input id="datepicker" type="text" class="form-control" formControlName="speciality" placeholder="Speciality *" />
+                                </div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <div class="input-group date">
+                                    <input id="datepicker" type="number" class="form-control" formControlName="experience" placeholder="Experience *" />
+                                </div>
+                            </div>
+                            
+                           
+                        </div>
+  
+  
+                        <div class="regerv_btn">
+                            <button type="submit" class="btn btn-warning" (click)="addChef()">Add Chef</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
